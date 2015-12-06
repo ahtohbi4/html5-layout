@@ -52,17 +52,22 @@
          INFO: see https://support.google.com/webmasters/answer/189077?hl=ru -->
     <link rel="alternate" hreflang="{lang}" href="{uri}">
 
-    <!-- Identifies a webpage to load in the background, in case the user wants to navigate to it next.
-         INFO: see http://www.w3.org/TR/resource-hints/#prerender -->
-    <link rel="prerender" href="{uri}">
+    <!-- Identifies a DNS query to resolve the background, so that requests can occur more quickly.
+         INFO: see http://www.w3.org/TR/resource-hints/#dfn-prefetch -->
+    <link rel="dns-prefetch" href="{domain}">
+
+    <!-- Initiating an early connection, which includes the DNS lookup, TCP handshake, and optional TLS negotiation,
+    allows the user agent to mask the high latency costs of establishing a connection.
+         INFO: see http://www.w3.org/TR/resource-hints/#preconnect -->
+    <link rel="preconnect" href="{uri}" crossorigin>
 
     <!-- Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache.
          INFO: see http://www.w3.org/TR/resource-hints/#prefetch -->
     <link rel="prefetch" href="{uri}" as="{type}" crossorigin="use-credentials">
 
-    <!-- Identifies a DNS query to resolve the background, so that requests can occur more quickly.
-         INFO: see http://www.w3.org/TR/resource-hints/#dfn-prefetch -->
-    <link rel="dns-prefetch" href="{domain}">
+    <!-- Identifies a webpage to load in the background, in case the user wants to navigate to it next.
+         INFO: see http://www.w3.org/TR/resource-hints/#prerender -->
+    <link rel="prerender" href="{uri}">
 
     <!-- CSS for layout
          NOTE: Use a some number of subdomains to parallel downloads -->
