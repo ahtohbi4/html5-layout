@@ -4,38 +4,43 @@
     class="no-js" - CSS class to view until JS is not initialized
     lang="" - Lang code to localization site
               INFO: see http://www.w3.org/International/questions/qa-html-language-declarations -->
-<html class="no-js" lang="en">
+<html class="no-js" lang="{lang}">
 <head>
     <!-- Charset -->
     <meta charset="utf-8">
 
     <!-- Page title
          INFO: required, not empty -->
-    <title>Layout 1.0</title>
+    <title>{title}</title>
 
     <!-- SEO meta informations -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="{description}">
+    <meta name="keywords" content="{keywords}">
 
     <!-- Cononical link
          INFO: see https://yandex.ru/support/webmaster/controlling-robot/html.xml#canonical -->
-    <link rel="canonical" href="">
+    <link rel="canonical" href="{uri}">
+
+    <!-- Alternate link
+         INFO: see https://support.google.com/webmasters/answer/189077?hl=ru -->
+    <link rel="alternate" hreflang="{lang}" href="{uri}">
 
     <!-- Open Graph Base params -->
-    <meta property="og:type" content="">
-    <meta property="og:url" content= "">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:type" content="{}">
+    <meta property="og:url" content= "{uri}">
+    <meta property="og:title" content="{title}">
+    <meta property="og:description" content="{description}">
+    <meta property="og:image" content="{uri}">
 
     <!-- CSS for layout -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{uri}">
 </head>
 
 <body>
+    {content}
 </body>
 </html>
 
 <!-- CSS for images to unblocking the first view
      WARN: It's not valide -->
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="{uri}">
