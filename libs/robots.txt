@@ -1,4 +1,6 @@
 # see: http://www.robotstxt.org/robotstxt.html
+# see: https://support.google.com/webmasters/answer/6062608?rd=1
+# see: https://yandex.ru/support/webmaster/controlling-robot/robots-txt.xml#robots-txt
 
 # Allow crawling of all content
 User-agent: *
