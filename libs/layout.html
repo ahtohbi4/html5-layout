@@ -52,18 +52,22 @@
          INFO: see https://support.google.com/webmasters/answer/189077?hl=ru -->
     <link rel="alternate" hreflang="{lang}" href="{uri}">
 
-    <!-- CSS for layout -->
+    <!-- CSS for layout
+         NOTE: Use a some number of subdomains to parallel downloads -->
     <link rel="stylesheet" href="{uri}">
 </head>
 
 <body>
     {content}
 
-    <!-- JavaScript place here -->
+    <!-- JavaScript place here
+         NOTE: Use a some number of subdomains to parallel downloads -->
     <script src="{uri}"></script>
 </body>
 </html>
 
 <!-- CSS for images to unblocking the first view
-     WARN: It's not valide -->
+     WARN: It's not valide
+     NOTE: Use a some number of subdomains to parallel downloads
+           Use a base64 encoding to decrease number of requests to the server -->
 <link rel="stylesheet" href="{uri}">
