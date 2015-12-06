@@ -52,6 +52,18 @@
          INFO: see https://support.google.com/webmasters/answer/189077?hl=ru -->
     <link rel="alternate" hreflang="{lang}" href="{uri}">
 
+    <!-- Identifies a webpage to load in the background, in case the user wants to navigate to it next.
+         INFO: see http://www.w3.org/TR/resource-hints/#prerender -->
+    <link rel="prerender" href="{uri}">
+
+    <!-- Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache.
+         INFO: see http://www.w3.org/TR/resource-hints/#prefetch -->
+    <link rel="prefetch" href="{uri}" as="{type}" crossorigin="use-credentials">
+
+    <!-- Identifies a DNS query to resolve the background, so that requests can occur more quickly.
+         INFO: see http://www.w3.org/TR/resource-hints/#dfn-prefetch -->
+    <link rel="dns-prefetch" href="{domain}">
+
     <!-- CSS for layout
          NOTE: Use a some number of subdomains to parallel downloads -->
     <link rel="stylesheet" href="{uri}">
@@ -67,7 +79,7 @@
 </html>
 
 <!-- CSS for images to unblocking the first view
-     WARN: It's not valide
+     WARN: It's not valid
      NOTE: Use a some number of subdomains to parallel downloads
            Use a base64 encoding to decrease number of requests to the server -->
 <link rel="stylesheet" href="{uri}">
