@@ -17,15 +17,6 @@
     <meta name="description" content="{description}">
     <meta name="keywords" content="{keywords}">
 
-    <!-- Cononical link
-         INFO: see https://yandex.ru/support/webmaster/controlling-robot/html.xml#canonical
-               see https://support.google.com/webmasters/answer/139066?rd=1 -->
-    <link rel="canonical" href="{uri}">
-
-    <!-- Alternate link
-         INFO: see https://support.google.com/webmasters/answer/189077?hl=ru -->
-    <link rel="alternate" hreflang="{lang}" href="{uri}">
-
     <!-- Open Graph Basic Metadata
          INFO: see http://ogp.me/#metadata -->
     <meta property="og:type" content="{}">
@@ -42,6 +33,24 @@
     <meta property="og:site_name" content="{name}">
     <meta property="og:audio" content="{uri}">
     <meta property="og:video" content="{uri}">
+
+    <!-- Mobile viewport scale
+         INFO: see https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Turning off auto detection of a phone numbers
+         INFO: To determine phone number locally use tel-protocol
+         <a href="tel:89000000000"></a> -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Cononical link
+         INFO: see https://yandex.ru/support/webmaster/controlling-robot/html.xml#canonical
+               see https://support.google.com/webmasters/answer/139066?rd=1 -->
+    <link rel="canonical" href="{uri}">
+
+    <!-- Alternate link
+         INFO: see https://support.google.com/webmasters/answer/189077?hl=ru -->
+    <link rel="alternate" hreflang="{lang}" href="{uri}">
 
     <!-- CSS for layout -->
     <link rel="stylesheet" href="{uri}">
