@@ -54,20 +54,17 @@
 
     <!-- Identifies a DNS query to resolve the background, so that requests can occur more quickly.
          INFO: see http://www.w3.org/TR/resource-hints/#dfn-prefetch -->
-    <link rel="dns-prefetch" href="{domain}">
-
+    <link rel="dns-prefetch" href="{domain}" pr="{value:0.0..1.0}">
     <!-- Initiating an early connection, which includes the DNS lookup, TCP handshake, and optional TLS negotiation,
     allows the user agent to mask the high latency costs of establishing a connection.
          INFO: see http://www.w3.org/TR/resource-hints/#preconnect -->
-    <link rel="preconnect" href="{uri}" crossorigin>
-
+    <link rel="preconnect" href="{uri}" crossorigin="{anonymous|use-credentials}" pr="{value:0.0..1.0}">
     <!-- Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache.
          INFO: see http://www.w3.org/TR/resource-hints/#prefetch -->
-    <link rel="prefetch" href="{uri}" as="{type}" crossorigin="use-credentials">
-
+    <link rel="prefetch" href="{uri}" as="{type}" crossorigin="{anonymous|use-credentials}" pr="{value:0.0..1.0}">
     <!-- Identifies a webpage to load in the background, in case the user wants to navigate to it next.
          INFO: see http://www.w3.org/TR/resource-hints/#prerender -->
-    <link rel="prerender" href="{uri}">
+    <link rel="prerender" href="{uri}" pr="{value:0.0..1.0}">
 
     <!-- CSS for layout
          NOTE: Use a some number of subdomains to parallel downloads -->
