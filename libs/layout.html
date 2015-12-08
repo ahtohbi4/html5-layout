@@ -67,8 +67,12 @@
     <link rel="prerender" href="{uri}" pr="{value:0.0..1.0}">
 
     <!-- Browser configuration schema reference
-         INFO: https://msdn.microsoft.com/library/dn455106.aspx -->
+         INFO: see https://msdn.microsoft.com/library/dn455106.aspx -->
     <meta name="msapplication-config" content="/browserconfig.xml">
+    <!-- Number of MS meta-tags.
+         INFO: see https://msdn.microsoft.com/ru-ru/library/dn255024(v=vs.85).aspx -->
+    <meta name="application-name" content="{name}">
+    <meta name="msapplication-badge" content="frequency={minutes}; polling-uri={uri}">
 
     <!-- CSS for layout
          NOTE: Use a some number of subdomains to parallel downloads -->
