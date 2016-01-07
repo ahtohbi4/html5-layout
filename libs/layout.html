@@ -1,36 +1,36 @@
 <!doctype html>
 
 <!-- HTML attributes.
-     NOTE: class="no-js" - CSS class to view until JS is not initialized
-           lang="" - Lang code to localization site
-              INFO: see http://www.w3.org/International/questions/qa-html-language-declarations -->
-<html class="no-js" lang="{lang}">
+     INFO: class="no-js" - CSS class to view until JS is not initialized
+     INFO: lang="" - Lang code to localization site
+           see http://www.w3.org/International/questions/qa-html-language-declarations -->
+<html class="no-js" lang="en">
 <head>
     <!-- Charset -->
     <meta charset="utf-8">
 
     <!-- Page title
          INFO: required, not empty -->
-    <title>{title}</title>
+    <title>%title%</title>
 
     <!-- SEO meta informations -->
-    <meta name="description" content="{description}">
-    <meta name="keywords" content="{keywords}">
+    <meta name="description" content="%description%">
+    <meta name="keywords" content="%keywords%">
 
     <!-- Open Graph Basic Metadata
          INFO: see http://ogp.me/#metadata -->
     <meta property="og:type" content="{type}">
-    <meta property="og:url" content= "{uri}">
-    <meta property="og:title" content="{title}">
-    <meta property="og:image" content="{uri}">
+    <meta property="og:url" content= "/path/to/target/page/">
+    <meta property="og:title" content="%title%">
+    <meta property="og:image" content="/path/to/image.jpg">
 
     <!-- Open Graph Optional Metadata
          INFO: see http://ogp.me/#optional -->
-    <meta property="og:description" content="{description}">
-    <meta property="og:determiner" content="{determiner}">
-    <meta property="og:locale" content="{language_TERRITORY}">
-    <meta property="og:locale:alternate" content="{language_TERRITORY}">
-    <meta property="og:site_name" content="{name}">
+    <meta property="og:description" content="%description%">
+    <meta property="og:determiner" content="%determiner%">
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:site_name" content="%name%">
     <meta property="og:audio" content="{uri}">
     <meta property="og:video" content="{uri}">
 
@@ -38,12 +38,12 @@
          INFO: see https://dev.twitter.com/cards/getting-started
          INFO: after check in validator https://cards-dev.twitter.com/validator -->
     <meta name="twitter:card" content="{type}">
-    <meta name="twitter:site" content="@{username}">
-    <meta name="twitter:title" content="{title}">
-    <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="{url}">
+    <meta name="twitter:site" content="@username">
+    <meta name="twitter:title" content="%title%">
+    <meta name="twitter:description" content="%description%">
+    <meta name="twitter:image" content="/path/to/image.jpg">
 
-    <!-- This meta tag tells Google that you don't want to provide a translation for this page.
+    <!-- This meta tag tells Google that you don't want to provide a translation for current page.
          INFO: see https://support.google.com/webmasters/answer/79812 -->
     <meta name="google" content="notranslate">
 
@@ -59,11 +59,11 @@
     <!-- Cononical link
          INFO: see https://yandex.ru/support/webmaster/controlling-robot/html.xml#canonical
                see https://support.google.com/webmasters/answer/139066?rd=1 -->
-    <link rel="canonical" href="{uri}">
+    <link rel="canonical" href="/cannonical/link/to/current/page/">
 
     <!-- Alternate link
          INFO: see https://support.google.com/webmasters/answer/189077?hl=ru -->
-    <link rel="alternate" hreflang="{lang}" href="{uri}">
+    <link rel="alternate" hreflang="ru" href="/path/to/alternate/language/of/current/page/">
 
     <!-- Identifies a DNS query to resolve the background, so that requests can occur more quickly.
          INFO: see http://www.w3.org/TR/resource-hints/#dfn-prefetch -->
