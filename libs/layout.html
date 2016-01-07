@@ -19,7 +19,7 @@
 
     <!-- Open Graph Basic Metadata
          INFO: see http://ogp.me/#metadata -->
-    <meta property="og:type" content="{}">
+    <meta property="og:type" content="{type}">
     <meta property="og:url" content= "{uri}">
     <meta property="og:title" content="{title}">
     <meta property="og:image" content="{uri}">
@@ -33,6 +33,19 @@
     <meta property="og:site_name" content="{name}">
     <meta property="og:audio" content="{uri}">
     <meta property="og:video" content="{uri}">
+
+    <!-- Twitter Cards.
+         INFO: see https://dev.twitter.com/cards/getting-started
+         INFO: after check in validator https://cards-dev.twitter.com/validator -->
+    <meta name="twitter:card" content="{type}">
+    <meta name="twitter:site" content="@{username}">
+    <meta name="twitter:title" content="{title}">
+    <meta name="twitter:description" content="{description}">
+    <meta name="twitter:image" content="{url}">
+
+    <!-- This meta tag tells Google that you don't want to provide a translation for this page.
+         INFO: see https://support.google.com/webmasters/answer/79812 -->
+    <meta name="google" content="notranslate">
 
     <!-- Mobile viewport scale
          INFO: see https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag -->
