@@ -19,7 +19,7 @@
 
     <!-- Open Graph Basic Metadata
          INFO: see http://ogp.me/#metadata -->
-    <meta property="og:type" content="{type}">
+    <meta property="og:type" content="website">
     <meta property="og:url" content= "/path/to/target/page/">
     <meta property="og:title" content="%title%">
     <meta property="og:image" content="/path/to/image.jpg">
@@ -31,13 +31,13 @@
     <meta property="og:locale" content="en_EN">
     <meta property="og:locale:alternate" content="ru_RU">
     <meta property="og:site_name" content="%name%">
-    <meta property="og:audio" content="{uri}">
-    <meta property="og:video" content="{uri}">
+    <meta property="og:audio" content="/path/to/audio/file.mp3">
+    <meta property="og:video" content="/path/to/video/file.avi">
 
     <!-- Twitter Cards.
          INFO: see https://dev.twitter.com/cards/getting-started
          INFO: after check in validator https://cards-dev.twitter.com/validator -->
-    <meta name="twitter:card" content="{type}">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@username">
     <meta name="twitter:title" content="%title%">
     <meta name="twitter:description" content="%description%">
@@ -67,46 +67,46 @@
 
     <!-- Identifies a DNS query to resolve the background, so that requests can occur more quickly.
          INFO: see http://www.w3.org/TR/resource-hints/#dfn-prefetch -->
-    <link rel="dns-prefetch" href="http://example.com" pr="1.0">
+    <link rel="dns-prefetch" href="//example.com">
     <!-- Initiating an early connection, which includes the DNS lookup, TCP handshake, and optional TLS negotiation,
     allows the user agent to mask the high latency costs of establishing a connection.
          INFO: see http://www.w3.org/TR/resource-hints/#preconnect -->
-    <link rel="preconnect" href="{uri}" crossorigin="{anonymous|use-credentials}" pr="{value:0.0..1.0}">
+    <link rel="preconnect" href="//example.com" crossorigin="use-credentials">
     <!-- Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache.
          INFO: see http://www.w3.org/TR/resource-hints/#prefetch -->
-    <link rel="prefetch" href="{uri}" as="{type}" crossorigin="{anonymous|use-credentials}" pr="{value:0.0..1.0}">
+    <link rel="prefetch" href="//example.com/path/to/next/page/or/single/resource/" crossorigin="use-credentials">
     <!-- Identifies a webpage to load in the background, in case the user wants to navigate to it next.
          INFO: see http://www.w3.org/TR/resource-hints/#prerender -->
-    <link rel="prerender" href="{uri}" pr="{value:0.0..1.0}">
+    <link rel="prerender" href="//example.com/path/to/next/page/">
 
     <!-- Browser configuration schema reference
          INFO: see https://msdn.microsoft.com/library/dn455106.aspx -->
     <meta name="msapplication-config" content="/browserconfig.xml">
     <!-- Number of MS meta-tags.
          INFO: see https://msdn.microsoft.com/ru-ru/library/dn255024(v=vs.85).aspx -->
-    <meta name="application-name" content="{name}">
-    <meta name="msapplication-badge" content="frequency={minutes}; polling-uri={uri}">
+    <meta name="application-name" content="%name%">
+    <meta name="msapplication-badge" content="frequency=60; polling-uri=http://example.com/path/to/polling.xml">
 
     <!-- CSS for layout
          NOTE: Use a some number of subdomains to parallel downloads. -->
-    <link rel="stylesheet" href="{uri}">
+    <link rel="stylesheet" href="//st1.example.com/path/to/first-view-style.css">
 </head>
 
 <body>
-    {content}
+    %content%
 
     <!-- Place your JavaScript here.
          NOTE: Use a some number of subdomains to parallel downloads -->
-    <script src="{uri}"></script>
+    <script src="//st1.example.com/path/to/script.js"></script>
 
     <!-- Google Analytics code.
-         NOTE: set your ID instead of {id} placeholder -->
-    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','{id}','auto');ga('send','pageview');</script>
+         NOTE: set your ID instead of %id% placeholder -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','%id%','auto');ga('send','pageview');</script>
 </body>
 </html>
 
 <!-- CSS for images to unblocking the first view
      WARN: It's not valid
      NOTE: Use a some number of subdomains to parallel downloads
-           Use a base64 encoding to decrease number of requests to the server -->
-<link rel="stylesheet" href="{uri}">
+           Use a base64 encoding to decrease number of requests to the server
+<link rel="stylesheet" href="//st1.example.com/path/to/second-view-style.css"> -->
