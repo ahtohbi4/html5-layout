@@ -70,8 +70,8 @@
     <link rel="dns-prefetch" href="//example.com">
     <!-- Initiating an early connection, which includes the DNS lookup, TCP handshake, and optional TLS negotiation,
     allows the user agent to mask the high latency costs of establishing a connection.
-         INFO: see http://www.w3.org/TR/resource-hints/#preconnect -->
-    <link rel="preconnect" href="//example.com" crossorigin="use-credentials">
+         INFO: see http://www.w3.org/TR/resource-hints/#preconnect
+    <link rel="preconnect" href="//example.com" crossorigin="use-credentials"> -->
     <!-- Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache.
          INFO: see http://www.w3.org/TR/resource-hints/#prefetch -->
     <link rel="prefetch" href="//example.com/path/to/next/page/or/single/resource/" crossorigin="use-credentials">
@@ -85,7 +85,7 @@
     <!-- Number of MS meta-tags.
          INFO: see https://msdn.microsoft.com/ru-ru/library/dn255024(v=vs.85).aspx -->
     <meta name="application-name" content="%name%">
-    <meta name="msapplication-badge" content="frequency=60; polling-uri=http://example.com/path/to/polling.xml">
+    <!-- <meta name="msapplication-badge" content="frequency=60; polling-uri=http://example.com/path/to/polling.xml"> -->
 
     <!-- CSS for layout
          NOTE: Use a some number of subdomains to parallel downloads. -->
