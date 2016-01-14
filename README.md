@@ -15,7 +15,7 @@ Installation
 
 ```Ctrl+c``` + ```Ctrl+v```
 
-Options
+Components
 --------------------
 
 #### ```<meta charset="utf-8">```
