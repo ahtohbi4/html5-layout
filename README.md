@@ -1,7 +1,7 @@
 HTML5 Layout
 ==============
 
-[![github version][github-version-img]][github-version] [![Travis Build Status][travis-img]][travis]
+[![GitHub version][github-version-img]][github-version] [![Travis Build Status][travis-img]][travis]
 
 [github-version-img]: https://badge.fury.io/gh/ahtohbi4%2Flayout.svg
 [github-version]: https://badge.fury.io/gh/ahtohbi4%2Flayout
