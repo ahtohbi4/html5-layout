@@ -8,7 +8,7 @@ HTML5 Layout
 [travis-img]: https://travis-ci.org/ahtohbi4/layout.svg
 [travis]: https://travis-ci.org/ahtohbi4/layout
 
-> Base HTML5 layout
+> Base HTML5 layout.
 
 Installation
 -----------------
