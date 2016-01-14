@@ -1,4 +1,4 @@
-# HTML5 Layout
+HTML5 Layout
 ==============
 
 [![github version][github-version-img]][github-version] [![Travis Build Status][travis-img]][travis]
