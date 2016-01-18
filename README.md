@@ -47,6 +47,11 @@ Google will sometimes use the meta description of a page in search results snipp
 
 May be taken into account when the [Yandex robot determines if a page matches a search query](https://yandex.ru/support/webmaster/controlling-robot/html.xml?ncrnd=2477#metatags). But Google [does not use it](https://googlewebmastercentral.blogspot.ru/2009/09/google-does-not-use-keywords-meta-tag.html) in web ranking.
 
+Tests
+--------------------
+
+Always check your pages with official W3C [validator](https://validator.w3.org/nu/).
+
 License
 --------------------
 
