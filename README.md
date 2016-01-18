@@ -18,11 +18,34 @@ Installation
 Components
 --------------------
 
-#### ```<meta charset="utf-8">```
+#### Charset
+```html
+<meta charset="utf-8">
+```
+
 *(required)* Charset of page content.
 
-#### ```<title>%title%</title>```
+#### Page title
+```html
+<title>%title%</title>
+```
+
 *(required)* Title which is showing in browser's tab
+
+#### SEO page description
+```html
+<meta name="description" content="%description%">
+```
+
+Google will sometimes use the meta description of a page in search results snippets. [Lern more...](https://support.google.com/webmasters/answer/35624?hl=en#1)
+
+
+#### SEO page keywords
+```html
+<meta name="keywords" content="%keywords%">
+```
+
+May be taken into account when the [Yandex robot determines if a page matches a search query](https://yandex.ru/support/webmaster/controlling-robot/html.xml?ncrnd=2477#metatags). But Google [does not use it](https://googlewebmastercentral.blogspot.ru/2009/09/google-does-not-use-keywords-meta-tag.html) in web ranking.
 
 License
 --------------------
