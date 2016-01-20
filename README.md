@@ -134,6 +134,7 @@ Other meta by Microsoft
 
 #### CSS for layout
 > Use a some number of subdomains to parallel downloads.
+
 ```html
 <link rel="stylesheet" href="//st1.example.com/path/to/first-view-style.css">
 ```
