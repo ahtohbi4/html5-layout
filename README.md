@@ -18,34 +18,48 @@ Installation
 Components
 --------------------
 
-#### Charset
+#### Charset *(required)*
+Charset of page content.
 ```html
 <meta charset="utf-8">
 ```
 
-*(required)* Charset of page content.
-
-#### Page title
+#### Page title *(required)*
+Title which is showing in browser's tab.
 ```html
 <title>%title%</title>
 ```
 
-*(required)* Title which is showing in browser's tab
-
 #### SEO page description
+Google will sometimes use the meta description of a page in search results snippets. [Lern more...](https://support.google.com/webmasters/answer/35624?hl=en#1)
 ```html
 <meta name="description" content="%description%">
 ```
 
-Google will sometimes use the meta description of a page in search results snippets. [Lern more...](https://support.google.com/webmasters/answer/35624?hl=en#1)
-
-
 #### SEO page keywords
+May be taken into account when the [Yandex robot determines if a page matches a search query](https://yandex.ru/support/webmaster/controlling-robot/html.xml?ncrnd=2477#metatags). But Google [does not use it](https://googlewebmastercentral.blogspot.ru/2009/09/google-does-not-use-keywords-meta-tag.html) in web ranking.
 ```html
 <meta name="keywords" content="%keywords%">
 ```
 
-May be taken into account when the [Yandex robot determines if a page matches a search query](https://yandex.ru/support/webmaster/controlling-robot/html.xml?ncrnd=2477#metatags). But Google [does not use it](https://googlewebmastercentral.blogspot.ru/2009/09/google-does-not-use-keywords-meta-tag.html) in web ranking.
+#### Open Graph
+Base meta:
+```html
+<meta property="og:type" content="website">
+<meta property="og:url" content= "/path/to/target/page/">
+<meta property="og:title" content="%title%">
+<meta property="og:image" content="/path/to/image.jpg">
+```
+Additional meta:
+```html
+<meta property="og:description" content="%description%">
+<meta property="og:determiner" content="%determiner%">
+<meta property="og:locale" content="en_EN">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:site_name" content="%name%">
+<meta property="og:audio" content="/path/to/audio/file.mp3">
+<meta property="og:video" content="/path/to/video/file.avi">
+```
 
 Tests
 --------------------
