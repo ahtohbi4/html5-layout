@@ -61,6 +61,83 @@ Additional meta:
 <meta property="og:video" content="/path/to/video/file.avi">
 ```
 
+#### Twitter Cards
+```html
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@username">
+<meta name="twitter:title" content="%title%">
+<meta name="twitter:description" content="%description%">
+<meta name="twitter:image" content="/path/to/image.jpg">
+```
+
+#### Google instructions
+```html
+<meta name="google" content="notranslate">
+```
+
+#### Mobile viewport scale
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+#### Phone number detection by device
+```html
+<meta name="format-detection" content="telephone=no">
+```
+
+#### Cononical link
+```html
+<link rel="canonical" href="/cannonical/link/to/current/page/">
+```
+
+#### Alternate link
+```html
+<link rel="alternate" hreflang="ru" href="/path/to/alternate/ru/language/of/current/page/">
+<link rel="alternate" hreflang="ar" href="/path/to/alternate/ar/language/of/current/page/">
+...
+```
+
+#### Prefetch DNS
+Identifies a DNS query to resolve the background, so that requests can occur more quickly. [Lern more...](http://www.w3.org/TR/resource-hints/#dfn-prefetch)
+```html
+<link rel="dns-prefetch" href="//example.com">
+```
+
+#### Pre connect
+Initiating an early connection, which includes the DNS lookup, TCP handshake, and optional TLS negotiation,
+allows the user agent to mask the high latency costs of establishing a connection. [Lern more...](http://www.w3.org/TR/resource-hints/#preconnect)
+```html
+<link rel="preconnect" href="//example.com" crossorigin="use-credentials">
+```
+
+#### Prefetch of resources
+Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache. [Lern more...](http://www.w3.org/TR/resource-hints/#prefetch)
+```html
+<link rel="prefetch" href="//example.com/path/to/next/page/or/single/resource/" crossorigin="use-credentials">
+```
+
+#### Pre render of next page
+Identifies a webpage to load in the background, in case the user wants to navigate to it next. [Lern more...](http://www.w3.org/TR/resource-hints/#prerender)
+```html
+<link rel="prerender" href="//example.com/path/to/next/page/">
+```
+
+#### Browser MS configuration
+```html
+<meta name="msapplication-config" content="/browserconfig.xml">
+```
+Other meta by Microsoft
+```html
+<meta name="application-name" content="%name%">
+<meta name="msapplication-badge" content="frequency=60; polling-uri=http://example.com/path/to/polling.xml">
+```
+
+#### CSS for layout
+> Use a some number of subdomains to parallel downloads.
+```html
+<link rel="stylesheet" href="//st1.example.com/path/to/first-view-style.css">
+```
+
 Tests
 --------------------
 
