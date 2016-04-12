@@ -11,9 +11,9 @@ HTML5 Layout
 > Base HTML5 layout.
 
 Installation
------------------
+--
 
-```Ctrl+c``` + ```Ctrl+v```
+`Ctrl+c` + `Ctrl+v`
 
 Components
 --------------------
