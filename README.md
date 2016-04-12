@@ -1,5 +1,5 @@
 HTML5 Layout
-==============
+==
 
 [![GitHub version][github-version-img]][github-version] [![Travis Build Status][travis-img]][travis]
 
@@ -16,7 +16,7 @@ Installation
 `Ctrl+c` + `Ctrl+v`
 
 Components
---------------------
+--
 
 #### Charset *(required)*
 Charset of page content.
