@@ -145,11 +145,11 @@ Other meta by Microsoft
 ```
 
 Tests
---------------------
+--
 
 Always check your pages with official W3C [validator](https://validator.w3.org/nu/).
 
 License
---------------------
+--
 
 MIT © Alexander Antonov <alexandr-post@yandex.ru>
