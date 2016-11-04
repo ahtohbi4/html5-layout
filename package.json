@@ -1,6 +1,6 @@
 {
   "name": "html5-layout",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Basic HTML5 template",
   "main": "src/index.html",
   "scripts": {
