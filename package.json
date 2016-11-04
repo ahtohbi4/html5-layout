@@ -1,0 +1,25 @@
+{
+  "name": "html5-layout",
+  "version": "1.0.1",
+  "description": "Basic HTML5 template",
+  "main": "src/index.html",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahtohbi4/html5-layout.git"
+  },
+  "keywords": [
+    "HTML5",
+    "boilerplate",
+    "template",
+    "layout"
+  ],
+  "author": "Alexandr Antonov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahtohbi4/html5-layout/issues"
+  },
+  "homepage": "https://github.com/ahtohbi4/html5-layout#readme"
+}
