@@ -1,0 +1,24 @@
+{
+  "name": "html5-layout",
+  "description": "Basic HTML5 template",
+  "main": "src/index.html",
+  "authors": [
+    "Alexandr Antonov"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "HTML5",
+    "boilerplate",
+    "template",
+    "layout"
+  ],
+  "homepage": "https://github.com/ahtohbi4/html5-layout",
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "*.md",
+    "bower_components",
+    "LICENSE",
+    "node_modules"
+  ]
+}
