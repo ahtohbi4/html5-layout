@@ -13,7 +13,13 @@ HTML5 Layout
 Installation
 --
 
-`Ctrl+c` + `Ctrl+v`
+You can clone the repository
+
+```bash
+$ https://github.com/ahtohbi4/html5-layout.git
+```
+
+or just copy content of the [source file](https://raw.githubusercontent.com/ahtohbi4/html5-layout/master/src/layout.html).
 
 Components
 --
