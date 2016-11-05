@@ -3,10 +3,10 @@ HTML5 Layout
 
 [![GitHub version][github-version-img]][github-version] [![Travis Build Status][travis-img]][travis]
 
-[github-version-img]: https://badge.fury.io/gh/ahtohbi4%2Flayout.svg
-[github-version]: https://badge.fury.io/gh/ahtohbi4%2Flayout
-[travis-img]: https://travis-ci.org/ahtohbi4/layout.svg
-[travis]: https://travis-ci.org/ahtohbi4/layout
+[github-version-img]: https://badge.fury.io/gh/ahtohbi4%2Fhtml5-layout.svg
+[github-version]: https://badge.fury.io/gh/ahtohbi4%2Fhtml5-layout
+[travis-img]: https://travis-ci.org/ahtohbi4/html5-layout.svg
+[travis]: https://travis-ci.org/ahtohbi4/html5-layout
 
 > Base HTML5 layout.
 
