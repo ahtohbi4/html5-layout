@@ -49,6 +49,9 @@ May be taken into account when the [Yandex robot determines if a page matches a 
 ```
 
 #### Open Graph
+
+See http://ogp.me/ for more information.
+
 Base meta:
 ```html
 <meta property="og:type" content="website">
